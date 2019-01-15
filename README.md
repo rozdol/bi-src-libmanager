@@ -79,6 +79,10 @@ ln -s $(pwd)/bi-projects/bi-src-libmanager bi-tutorial/src
 
 ### Инициализация версионности
 
+Создайте новый репозитарий с именем `bi-src-libmanager`
+
+(https://help.github.com/articles/creating-a-new-repository/)
+
 ```bash
 cd bi-projects/bi-src-libmanager
 
@@ -87,6 +91,13 @@ git add .
 git commit -m 'initial'
 
 git remote add origin git@github.com:rozdol/bi-src-libmanager.git
-git push origin master
+git push -u origin master
 ```
+#### После изменений в коде
 
+```bash
+git status
+git add
+git commit -m 'added changes to REANDME.md file'
+git push
+```

@@ -97,7 +97,29 @@ git push -u origin master
 
 ```bash
 git status
-git add
+git add .
 git commit -m 'added changes to REANDME.md file'
 git push
 ```
+
+#### Обновить изменения из серевера в локальный код
+
+```bash
+git pull
+```
+
+# Замена главного меню
+### Меню по умолчанию
+`src/helpers/menu.html`
+
+### Меню из базы данных
+```bash
+cd /var/www/bi-projects/bi-src-libmanager
+mv helpers/menu.html helpers/menu_deleted.html
+```
+
+`$GLOBALS['settings']['fast_menu']=0;` в `config/config.php`
+`$GLOBALS['settings']['app_loogo']=' '` - для удаления логотипа
+
+# Добавление таблиц
+TBD

@@ -54,4 +54,4 @@ if (!$GLOBALS['settings']['dev_mode']) {
 } else {
     $GLOBALS['settings']['message']='<span style="font-size:18px;"><span style="color:#ff0000;">System is in developing mode. (DATA IS INCONSISTENT!)</span></span>';
 }
-$GLOBALS['settings']['app_loogo']='<span style="font-size:26px;"><span style="color:#ff0000;"><strong>Nice</strong></span><span style="color:#dedede;">Logo</span><span style="color:#ff0000;">☯︎</span></span>';
+$GLOBALS['settings']['app_loogo']=' ';

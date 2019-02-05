@@ -1,0 +1,118 @@
+id;name;alias;list_id;qty;default_value;addinfo;text1;num1
+0;None;none;0;0;t;"";"";0
+200;Undefined;Undefined;2;0;f;"";"";0
+201;Internal;Group 1;2;0;f;"";"";0
+202;External;Group 2;2;0;f;"";"";0
+203;Other;"";2;0;f;"";"";0
+204;Bank;Bank;2;0;f;"";"";0
+205;Safe;Group 3;2;0;f;"";"";0
+209;Employee;Employee;2;0;f;"";"";0
+210;Nominal;Nominal;2;0;f;"";"";0
+211;Trust;Trust;2;0;f;"";"";0
+212;Asset;Asset;2;0;f;"";"";0
+213;Participating;"";2;0;f;"";"";0
+214;Fund;fund;2;0;f;"";"";0
+600;USD;USD;6;0;f;"";$;0
+601;EUR;EUR;6;0;f;"";€;0
+602;RUB;RUB;6;0;f;"";руб;0
+603;CYP;CYP;6;0;f;"";£;0
+604;CHF;CHF;6;0;f;"";CHF;0
+605;JPY;JPY;6;0;f;"";¥;0
+606;GBP;GBP;6;0;f;"";£;0
+607;Safe Custody;Safe Custody;6;0;f;"";SC$;0
+608;HKD;HKD;6;0;f;"";HK$;0
+609;GEL;GEL;6;0;f;"";ლ;0
+10000;Armenia;"";100;0;f;"";"";4.63
+10001;Austria;"";100;0;f;"";EEA;5.02
+10002;Azerbaijan;"";100;0;f;"";"";4.84
+10003;Bahamas;"";100;0;f;"";"";6.01
+10004;Bahrain;"";100;0;f;"";"";5.59
+10005;Belarus;"";100;0;f;"";"";5.42
+10006;Belgium;"";100;0;f;"";EEA;4.65
+10007;Belize;"";100;0;f;"";"";0
+10008;Bermuda;"";100;0;f;"";"";0
+10009;Bosnia and Herzegovina;"";100;0;f;"";"";5.61
+10010;British Virgin Islands;"";100;0;f;"";"";0
+10011;Bulgaria;"";100;0;f;"";EEA;3.83
+10012;Canada;"";100;0;f;"";"";5
+10013;Cayman Islands;"";100;0;f;"";"";0
+10014;Channel Islands;"";100;0;f;"";"";0
+10015;Chile;"";100;0;f;"";"";4.8
+10016;China;"";100;0;f;"";"";6.7
+10017;Croatia;"";100;0;f;"";"";4.15
+10018;Cyprus;"";100;0;f;"";EEA;5.12
+10019;Czech Republic;"";100;0;f;"";EEA;4.66
+10020;Denmark;"";100;0;f;"";EEA;4.08
+10021;Dominica;"";100;0;f;"";"";4.4
+10023;Estonia;"";100;0;f;"";EEA;3.82
+10024;Finland;"";100;0;f;"";EEA;3.05
+10025;France;"";100;0;f;"";EEA;5.03
+10026;Georgia;"";100;0;f;"";"";4.71
+10027;Germany;"";100;0;f;"";EEA;5.33
+10028;Gibraltar;"";100;0;f;"";EEA;0
+10029;Greece;"";100;0;f;"";EEA;5.53
+10030;Guernsey;"";100;0;f;"";"";0
+10032;Hong Kong;"";100;0;f;"";"";5.51
+10033;India;"";100;0;f;"";"";5.69
+10034;Iraq;"";100;0;f;"";"";8.22
+10035;Island of Nevis;"";100;0;f;"";"";0
+10036;Isle of Man;"";100;0;f;"";"";0
+10037;Israel;"";100;0;f;"";"";4.89
+10038;Italy;"";100;0;f;"";EEA;5.36
+10039;Jersey;"";100;0;f;"";"";0
+10040;Kyrgyzstan;"";100;0;f;"";"";6.21
+10041;Latvia;"";100;0;f;"";EEA;4.91
+10042;Lebanon;"";100;0;f;"";"";7.02
+10043;Liechtenstein;"";100;0;f;"";EEA;0
+10044;Lithuania;"";100;0;f;"";EEA;3.62
+10045;Luxembourg;"";100;0;f;"";EEA;5.89
+10046;Maldives;"";100;0;f;"";"";7.13
+10047;Malta;"";100;0;f;"";EEA;4.49
+10048;Marshall Islands;"";100;0;f;"";"";6.67
+10049;Monaco;"";100;0;f;"";"";0
+10050;Montenegro;"";100;0;f;"";"";4.82
+10051;Netherlands;"";100;0;f;"";EEA;5.03
+10052;New Zealand;"";100;0;f;"";"";3.86
+10053;Panama;"";100;0;f;"";"";7.09
+10054;China;"";100;0;f;"";"";6.06
+10055;Panama;"";100;0;f;"";"";7.16
+10056;Russian Federation;"";100;0;f;"";"";6.22
+10057;Saint Lucia;"";100;0;f;"";"";5.01
+10058;San Marino;"";100;0;f;"";"";0
+10059;Seychelles;"";100;0;f;"";"";6
+10060;Singapore;"";100;0;f;"";"";4.91
+10061;Spain;"";100;0;f;"";EEA;4.94
+10062;Sri Lanka;"";100;0;f;"";"";7.16
+10063;Switzerland;"";100;0;f;"";"";5.46
+10064;Thailand;"";100;0;f;"";"";6.52
+10065;Netherlands;"";100;0;f;"";"";4.99
+10067;Ukraine;"";100;0;f;"";"";6.57
+10068;United Arab Emirates;"";100;0;f;"";"";5.98
+10069;United Kingdom;"";100;0;f;"";EEA;4.77
+10070;United States of America;"";100;0;f;"";"";5.17
+10071;West Indies;"";100;0;f;"";"";0
+10085;Ireland;Ireland;100;0;f;"";EEA;4.54
+10086;Sweden;"";100;0;f;"";EEA;4.32
+10087;Mauritius;"";100;0;f;"";"";5.82
+10096;Kazakhstan;"";100;0;f;"";"";5.88
+10101;Hungary;Hungary;100;0;f;"";EEA;4.15
+10102;Poland;Poland;100;0;f;"";EEA;4.4
+10103;Portugal;Portugal;100;0;f;"";EEA;4.21
+10104;Romania;Romania;100;0;f;"";EEA;4.46
+10105;Slovakia;Slovakia;100;0;f;"";EEA;4.88
+10106;Slovenia;Slovenia;100;0;f;"";EEA;4.06
+10107;Iceland;Iceland;100;0;f;"";EEA;4.47
+10108;Norway;Norway;100;0;f;"";EEA;4.63
+10109;Iran;Iran;100;0;f;"";NCJ;8.61
+10110;Democratic Peoples Republic of Korea (DPRK);DPRK;100;0;f;"";NCJ;0
+10111;Algeria;Algeria;100;0;f;"";NCJ;6.5
+10112;Ecuador;Ecuador;100;0;f;"";NCJ;5.48
+10113;Indonesia ;Indonesia ;100;0;f;"";NCJ;6.23
+10114;Myanmar;Myanmar;100;0;f;"";NCJ;7.71
+10115;Beirut;"";100;0;f;"";"";0
+10116;Saint Kitts and Nevis;"";100;0;f;"";"";0
+10117;Puerto Rico;PR;100;0;f;"";"";0
+10118;Japan;JP;100;0;f;"";"";5.76
+10119;Andora;andora;100;0;f;"";"";0
+10120;Uzbekistan;"";100;0;f;"";"";5.1
+10121;Malaysia;"";100;0;f;"";"";5.46

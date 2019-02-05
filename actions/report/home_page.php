@@ -11,7 +11,7 @@ if ($GLOBALS[uid]<=0) {
 
         $test_new=$this->data->get_val('users', 'id', 3)*1;
         if ($test_new!=3) {
-            echo "<a href='?act=tools&what=update'>Update System $test_new</a>";
+            echo "<a href='?act=tools&what=update'>Update System (TEST: $test_new new users)</a>";
             exit;
         }
     }

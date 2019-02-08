@@ -138,7 +138,7 @@ cp bi-tutorial/src/.env.example bi-tutorial/src/.env
 [...]
 APP_NAME='bi-tutorial'
 [...]
-DB_NAME='bi-tutorial'
+DB_NAME='bi_tutorial'
 [...]
 ```
 

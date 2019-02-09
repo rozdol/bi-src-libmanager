@@ -31,7 +31,6 @@ CREATE TABLE books(
   link text DEFAULT ''::text,
   active boolean DEFAULT true,
   descr text DEFAULT ''::text,
-  template text DEFAULT ''::text,
   CONSTRAINT books_pkey PRIMARY KEY (id)
 )WITH OIDS;
 
@@ -41,6 +40,7 @@ CREATE TABLE books_transactions(
   name text DEFAULT ''::text,
   date timestamp DEFAULT now(),
   user_id integer NOT NULL DEFAULT 0,
+  entity_id integer NOT NULL DEFAULT 0,
   type_id integer NOT NULL DEFAULT 0,
   book_id integer NOT NULL DEFAULT 0,
   date_from timestamp DEFAULT now(),
@@ -69,6 +69,7 @@ CREATE TABLE alerts_history(
 
 alter table books_transactions add constraint fk_books_transactions_books foreign key (book_id) references books (id) on delete cascade on update cascade;
 alter table books_transactions add constraint fk_books_transactions_users foreign key (user_id) references users (id) on delete cascade on update cascade;
+alter table books_transactions add constraint fk_books_transactions_entities foreign key (entity_id) references entities (id) on delete cascade on update cascade;
 
 alter table alerts_history add constraint fk_alerts_history_users foreign key (user_id) references users (id) on delete cascade on update cascade;
 alter table alerts_history add constraint fk_alerts_history_intities foreign key (entity_id) references entities (id) on delete cascade on update cascade;

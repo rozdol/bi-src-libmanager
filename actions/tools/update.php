@@ -29,9 +29,6 @@ $access_arr=[
     'edit_special',
     'edit_send_message',
 
-    'report_test',
-    'report_active_users',
-
 
 
     'view_entities',
@@ -42,6 +39,9 @@ $access_arr=[
     'edit_books',
     'edit_books_transactions',
     'edit_alerts_history',
+
+    'report_test',
+    'report_active_users',
 ];
 
 foreach ($access_arr as $access_item) {
@@ -61,17 +61,30 @@ foreach ($access_arr as $access_item) {
 // Add new users
 $new_users[]=['username'=>'alex'];
 
-// $new_users[]=['id'=> 4,'username'=>'andri'];
-// $new_users[]=['id'=> 5,'username'=>'marina'];
-// $new_users[]=['id'=> 6,'username'=>'christos'];
+
+$new_users[]=[
+    'id'=> 3,
+    'username'=>'lukyanov',
+    'firstname'=>'Andrey',
+    'surname'=>'Lukyanov',
+    'email'=>'test1@company.com'
+];
+
+$new_users[]=[
+    'id'=> 4,
+    'username'=>'sova',
+    'firstname'=>'Iulian',
+    'surname'=>'Sova',
+    'email'=>'test2@company.com'
+];
 
 foreach ($new_users as $vals) {
     unset($user_vals);
     $user_vals=[
         'username'=>$vals[username],
-        'email'=>'rozdol@gmail.com',
-        'firstname'=>'Alex',
-        'surname'=>'Surname',
+        'email'=>$vals[email],
+        'firstname'=>$vals[firstname],
+        'surname'=>$vals[surname],
         'regdate'=>$GLOBALS[today],
         'active'=>1,
     ];
@@ -141,6 +154,7 @@ if(file_exists($csv_file)){
     $this->html->error("No file $csv_file");
 }
 
+
 $this->livestatus('Add Entities');
 $vals_array[]=[
     'name' => 'Alexander',
@@ -188,9 +202,37 @@ foreach ($vals_array as $vals) {
 }
 
 
+// clean up var:
+unset($vals_array);
+
+$vals_array[]=[
+    'name' => 'Mastering BI 8',
+    'isbn' => '978-3-16-148410-0',
+    'link' => 'https://www.google.com/search?q=isbn&ie=utf-8&oe=utf-8&client=firefox-b-ab',
+];
+
+$vals_array[]=[
+    'name' => 'Advance programming BI 8',
+    'isbn' => '978-3-16-148411-0',
+    'link' => 'https://www.isbn-international.org/content/what-isbn',
+];
+
+$vals_array[]=[
+    'name' => 'Cookbook BI 8',
+    'isbn' => '978-3-16-148412-0',
+    'link' => 'https://www.isbn-international.org/content/what-isbn',
+];
+
+foreach ($vals_array as $vals) {
+    echo "Insert Entities $vals[name]<br>";
+    $id=$this->db->insert_db('entities', $vals);
+}
+
+
 //copy access
 $_POST[group_id_from]=2;
 $_POST[group_id_tos]='3';
+// $_POST[group_id_tos]='3,4,7';
 //$this->tools('copy_access');
 
 $this->livestatus('DONE');

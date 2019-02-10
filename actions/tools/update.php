@@ -224,8 +224,8 @@ $vals_array[]=[
 ];
 
 foreach ($vals_array as $vals) {
-    echo "Insert Entities $vals[name]<br>";
-    $id=$this->db->insert_db('entities', $vals);
+    echo "Insert Books $vals[name]<br>";
+    $id=$this->db->insert_db('books', $vals);
 }
 
 

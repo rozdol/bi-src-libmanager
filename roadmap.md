@@ -1,28 +1,28 @@
 # BI8 PHP framework course
 
 -  [x] Requirements
-	-  [o] Syntax Highlighted Editor
-	-  [-] Linux like OS (Linux, OS X, VM)
-	-  [ ] Installed NGINX or Apache2, PHP7.2, Postgresql 10, Pdflib extension
-	-  [ ] Basic knowledge of PHP, HTML, CSS, JS, SQL
+	-  [x] Syntax Highlighted Editor
+	-  [x] Linux like OS (Linux, OS X, VM)
+	-  [x] Installed NGINX or Apache2, PHP7.2, Postgresql 10, Pdflib extension
+	-  [x] Basic knowledge of PHP, HTML, CSS, JS, SQL
 -  [ ] Introduction
-	-  [ ] What is FW good for and what is not
+	-  [x] What is FW good for and what is not
 	-  [ ] Showcase
--  [ ] Define a case study
-	-  [ ] Pick an idea
-	-  [ ] Define roles
-	-  [ ] Define functions and procedures
-	-  [ ] Break down to data structure
--  [ ] Set up Development environment
-	-  [ ] Aliases, HotKeys, Snippets
-	-  [ ] Git, Composer, Packagist
--  [ ] Installation of skeleton
-	-  [ ] Install from git
-	-  [ ] Check default project
-	-  [ ] Pre-defined tables
--  [ ] Request lifecycle
-	-  [ ] App
-	-  [ ] Router
+-  [x] Define a case study
+	-  [x] Pick an idea
+	-  [x] Define roles
+	-  [x] Define functions and procedures
+	-  [x] Break down to data structure
+-  [x] Set up Development environment
+	-  [x] Aliases, HotKeys, Snippets
+	-  [x] Git, Composer, Packagist
+-  [x] Installation of skeleton
+	-  [x] Install from git
+	-  [x] Check default project
+	-  [x] Pre-defined tables
+-  [x] Request lifecycle
+	-  [x] App
+	-  [x] Router
 -  [ ] Framework core functions
 	-  [ ] Dates
 	-  [ ] Utils
@@ -35,9 +35,9 @@
 	-  [ ] Charts
 	-  [ ] Others
 -  [ ] Router Actions
-	-  [ ] Show
-	-  [ ] Form
-	-  [ ] Save
+	-  [x] Show
+	-  [x] Form
+	-  [x] Save
 	-  [ ] Delete
 	-  [ ] Details
 	-  [ ] Report
@@ -48,19 +48,19 @@
 	-  [ ] Api
 	-  [ ] Doc
 	-  [ ] Pdf
-	-  [ ] Test
-	-  [ ] Tools
+	-  [x] Test
+	-  [x] Tools
 -  [ ] Access and security
-	-  [ ] Users
+	-  [x] Users
 	-  [ ] Groups
 	-  [ ] Access
-	-  [ ] Menu
+	-  [x] Menu
 	-  [ ] Settings
--  [ ] Switching project to Dev mode
+-  [x] Switching project to Dev mode
 -  [ ] Create tables in DB
 	-  [ ] Config
 	-  [ ] installation script
--  [ ] Create CRUD for each table
+-  [x] Create CRUD for each table
 -  [ ] Import data
 -  [ ] Wring a simple test
 -  [ ] Writing a function
@@ -81,13 +81,13 @@
 
 
 Я предлагаю включить в список следующее:
--  [ ] Installation of BI framework skeleton
--  [ ] Initialisation of new project
--  [ ] Data: CRUD and ACL
+-  [x] Installation of BI framework skeleton
+-  [x] Initialisation of new project
+-  [x] Data: CRUD and ACL
 -  [ ] Forms and Reports
 -  [ ] Table views and Details views
--  [ ] Users management and access rights
--  [ ] Configuration and settings
+-  [x] Users management and access rights
+-  [x] Configuration and settings
 -  [ ] Integration with external services (SMS, Mail, REST servers)
 -  [ ] API calls
 -  [ ] Project development cycle conforming Agile method

@@ -29,6 +29,9 @@ $access_arr=[
     'edit_special',
     'edit_send_message',
 
+    'report_test',
+    'report_active_users',
+
 
 
     'view_entities',
@@ -136,6 +139,52 @@ if(file_exists($csv_file)){
     $this->db->getval($sql);
 }else{
     $this->html->error("No file $csv_file");
+}
+
+$this->livestatus('Add Entities');
+$vals_array[]=[
+    'name' => 'Alexander',
+    'surname' => 'Titov',
+    'type_id' => 202,
+    'active' => 1,
+    'physical' => 1,
+    'email' => 'test@gmail.com',
+    'address' => 'Maximos Plaza, Limassol',
+    'country_id' => 10018,
+    'mobile' => '+35799350000',
+    'descr' => 'Test1'
+];
+
+
+$vals_array[]=[
+    'name' => 'Andrei',
+    'surname' => 'Lukianov',
+    'type_id' => 202,
+    'active' => 1,
+    'physical' => 0,
+    'email' => 'test@gmail.com',
+    'address' => 'Road Town,Tortola',
+    'country_id' => 10010,
+    'mobile' => '+35799350000',
+    'descr' => 'Test1'
+];
+
+$vals_array[]=[
+    'name' => 'Julian',
+    'surname' => 'Sova',
+    'type_id' => 202,
+    'active' => 1,
+    'physical' => 0,
+    'email' => 'test@gmail.com',
+    'address' => 'BDO COurt, Limassol',
+    'country_id' => 10018,
+    'mobile' => '+35799350000',
+    'descr' => 'Test1'
+];
+
+foreach ($vals_array as $vals) {
+    echo "Insert Entities $vals[name]<br>";
+    $id=$this->db->insert_db('entities', $vals);
 }
 
 

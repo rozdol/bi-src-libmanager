@@ -1,100 +1,100 @@
 # BI8 PHP framework course
 
-- Requirements
-	- Syntax Highlighted Editor
-	- Linux like OS (Linux, OS X, VM)
-	- Installed NGINX or Apache2, PHP7.2, Postgresql 10, Pdflib extension
-	- Basic knowledge of PHP, HTML, CSS, JS, SQL
-- Introduction
-	- What is FW good for and what is not
-	- Showcase
-- Define a case study
-	- Pick an idea
-	- Define roles
-	- Define functions and procedures
-	- Break down to data structure
-- Set up Development environment
-	- Aliases, HotKeys, Snippets
-	- Git, Composer, Packagist
-- Installation of skeleton
-	- Install from git
-	- Check default project
-	- Pre-defined tables
-- Request lifecycle
-	- App
-	- Router
-- Framework core functions
-	- Dates
-	- Utils
-	- Html
-	- Comm
-	- DB
-	- Data
-- External Classes
-	- Numbers
-	- Charts
-	- Others
-- Router Actions
-	- Show
-	- Form
-	- Save
-	- Delete
-	- Details
-	- Report
-	- Append
-	- Search
-- Additional Router Actions
-	- Json
-	- Api
-	- Doc
-	- Pdf
-	- Test
-	- Tools
-- Access and security
-	- Users
-	- Groups
-	- Access
-	- Menu
-	- Settings
-- Switching project to Dev mode
-- Create tables in DB
-	- Config
-	- installation script
-- Create CRUD for each table
-- Import data
-- Wring a simple test
-- Writing a function
-- Writing a report
-- Reusing modules from another projects
-- Connect external resource
-- Export to CSV
-- Generate PDF
-- Generate DOCX
-- Generate XLSX
-- Parse XLSX
-- Send SMS
-- Send E-mails
-- Create API functions
-- Deploying to production server
-- Continuous integration
-- Deploy to AWS
+-  [x] Requirements
+	-  [o] Syntax Highlighted Editor
+	-  [-] Linux like OS (Linux, OS X, VM)
+	-  [ ] Installed NGINX or Apache2, PHP7.2, Postgresql 10, Pdflib extension
+	-  [ ] Basic knowledge of PHP, HTML, CSS, JS, SQL
+-  [ ] Introduction
+	-  [ ] What is FW good for and what is not
+	-  [ ] Showcase
+-  [ ] Define a case study
+	-  [ ] Pick an idea
+	-  [ ] Define roles
+	-  [ ] Define functions and procedures
+	-  [ ] Break down to data structure
+-  [ ] Set up Development environment
+	-  [ ] Aliases, HotKeys, Snippets
+	-  [ ] Git, Composer, Packagist
+-  [ ] Installation of skeleton
+	-  [ ] Install from git
+	-  [ ] Check default project
+	-  [ ] Pre-defined tables
+-  [ ] Request lifecycle
+	-  [ ] App
+	-  [ ] Router
+-  [ ] Framework core functions
+	-  [ ] Dates
+	-  [ ] Utils
+	-  [ ] Html
+	-  [ ] Comm
+	-  [ ] DB
+	-  [ ] Data
+-  [ ] External Classes
+	-  [ ] Numbers
+	-  [ ] Charts
+	-  [ ] Others
+-  [ ] Router Actions
+	-  [ ] Show
+	-  [ ] Form
+	-  [ ] Save
+	-  [ ] Delete
+	-  [ ] Details
+	-  [ ] Report
+	-  [ ] Append
+	-  [ ] Search
+-  [ ] Additional Router Actions
+	-  [ ] Json
+	-  [ ] Api
+	-  [ ] Doc
+	-  [ ] Pdf
+	-  [ ] Test
+	-  [ ] Tools
+-  [ ] Access and security
+	-  [ ] Users
+	-  [ ] Groups
+	-  [ ] Access
+	-  [ ] Menu
+	-  [ ] Settings
+-  [ ] Switching project to Dev mode
+-  [ ] Create tables in DB
+	-  [ ] Config
+	-  [ ] installation script
+-  [ ] Create CRUD for each table
+-  [ ] Import data
+-  [ ] Wring a simple test
+-  [ ] Writing a function
+-  [ ] Writing a report
+-  [ ] Reusing modules from another projects
+-  [ ] Connect external resource
+-  [ ] Export to CSV
+-  [ ] Generate PDF
+-  [ ] Generate DOCX
+-  [ ] Generate XLSX
+-  [ ] Parse XLSX
+-  [ ] Send SMS
+-  [ ] Send E-mails
+-  [ ] Create API functions
+-  [ ] Deploying to production server
+-  [ ] Continuous integration
+-  [ ] Deploy to AWS
 
 
 Я предлагаю включить в список следующее:
-- Installation of BI framework skeleton
-- Initialisation of new project
-- Data: CRUD and ACL
-- Forms and Reports
-- Table views and Details views
-- Users management and access rights
-- Configuration and settings
-- Integration with external services (SMS, Mail, REST servers)
-- API calls
-- Project development cycle conforming Agile method
-- Import data
-- Charts
-- Generate PDF, DOCX and XLSX files
-- Backup, Restore, Scheduled runs.
-- Running on production server
+-  [ ] Installation of BI framework skeleton
+-  [ ] Initialisation of new project
+-  [ ] Data: CRUD and ACL
+-  [ ] Forms and Reports
+-  [ ] Table views and Details views
+-  [ ] Users management and access rights
+-  [ ] Configuration and settings
+-  [ ] Integration with external services (SMS, Mail, REST servers)
+-  [ ] API calls
+-  [ ] Project development cycle conforming Agile method
+-  [ ] Import data
+-  [ ] Charts
+-  [ ] Generate PDF, DOCX and XLSX files
+-  [ ] Backup, Restore, Scheduled runs.
+-  [ ] Running on production server
 
 

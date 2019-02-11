@@ -32,7 +32,7 @@
 	-  [ ] Data
 -  [ ] External Classes
 	-  [ ] Numbers
-	-  [ ] Charts
+	-  [x] Charts
 	-  [ ] Others
 -  [ ] Router Actions
 	-  [x] Show
@@ -62,11 +62,11 @@
 	-  [x] installation script (src/tools/update.php)
 -  [x] Create CRUD for each table
 -  [ ] Import data
--  [ ] Wring a simple test
+-  [x] Wring a simple test
 -  [x] Writing a function
 -  [x] Writing a report
 -  [x] Reusing modules from another projects
--  [ ] Connect external resource
+-  [x] Connect external resource
 -  [ ] Export to CSV
 -  [ ] Generate PDF
 -  [ ] Generate DOCX
@@ -88,7 +88,7 @@
 -  [x] Table views and Details views
 -  [x] Users management and access rights
 -  [x] Configuration and settings
--  [ ] Integration with external services (SMS, Mail, REST servers)
+-  [ ] Integration with external services (SMS, Mail, REST servers) [Reuters]
 -  [ ] API calls
 -  [ ] Project development cycle conforming Agile method
 -  [ ] Import data

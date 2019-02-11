@@ -25,7 +25,7 @@ $descr=$this->html->readRQ('descr');
     if($id==0){$id=$this->db->insert_db($what,$vals);}else{$id=$this->db->update_db($what,$id,$vals);}
 
 
-    $descr=$this->data->get_val($what, 'descr', $id);
+    //$descr=$this->data->get_val($what, 'descr', $id);
     if($descr==''){
     	$descr=$this->project->get_book_descr($id);
     	$this->db->update_db($what,$id,['descr'=>$descr]);

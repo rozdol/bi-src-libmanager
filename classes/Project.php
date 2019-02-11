@@ -36,6 +36,9 @@ class project extends Router
     function ric_decode($ric){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
     function get_reuters_quote($index='',$df='',$dt=''){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
     function update_reuters_quotes($indexes){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
+    function export_to_xlsx(){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
+
+
 
     //replace_placeholder
 }

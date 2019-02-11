@@ -42,7 +42,7 @@ $GLOBALS['settings']['use_local_rates']=0;
 $GLOBALS['settings']['no_nenu_rates']=1;
 $GLOBALS['settings']['no_nenu_alerts']=1;
 $GLOBALS['settings']['no_cart']=1;
-$GLOBALS['settings']['no_export']=1;
+$GLOBALS['settings']['no_export']=0;
 $GLOBALS['topbar']['login']=1;
 
 

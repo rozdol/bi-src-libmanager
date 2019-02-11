@@ -23,7 +23,9 @@
 
 
     //=== Andrew. Modify list of columns in output html table:
-    $fields=array('id','name','date','isbn','link',);
+    $fields=array('id','name','date','isbn','link','');
+    $csv_row=$fields;
+    $csv_arr[]=implode("\t", $csv_row);
     // $fields=array('id','name','date','isbn','link','active','descr',);
 
     //$sort= $fields;
@@ -31,7 +33,8 @@
     $out=$this->html->tablehead($what,$qry, $order, 'no_addbutton', $fields,$sort);
 
     if (!($cur = pg_query($sql))) {$this->html->HT_Error( pg_last_error()."<br><b>".$sql."</b>" );}
-    $rows=pg_num_rows($cur);if($rows>0)$csv.=$this->data->csv($sql);
+    $rows=pg_num_rows($cur);
+    //if($rows>0)$csv.=$this->data->csv($sql);
 
 
 
@@ -76,6 +79,7 @@
         // $link = $this->html->link_button('go to', $row[link], 'btn-micro btn-success' );
         $link = $this->html->link_button('go to', $row[link], 'btn-micro btn-danger' );
         $out.= "<td>$link</td>";
+        $out.=$this->html->HT_editicons($what, $row[id]);
 
 
 
@@ -85,9 +89,14 @@
         $totals[2]+=$row[qty];
         if ($allids) $allids.=','.$what.':'.$row[id]; else $allids.=$what.':'.$row[id];
         $this->livestatus(str_replace("\"","'",$this->html->draw_progress($i/$rows*100)));
+
+        $csv_row=[$row[id],$row[name],$row[isbn]];
+        $csv_arr[]=implode("\t", $csv_row);
     }
+    $csv=implode("\n", $csv_arr);
     $this->livestatus('');
     include(FW_DIR.'/helpers/end_table.php');
+
 
 
     $bs = '    
@@ -103,7 +112,7 @@
       </ul>
     </div>';
 
-$body .=$bs;
+//$body .=$bs;
 
 
     

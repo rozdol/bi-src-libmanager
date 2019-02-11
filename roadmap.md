@@ -39,12 +39,12 @@
 	-  [x] Form
 	-  [x] Save
 	-  [ ] Delete
-	-  [ ] Details
-	-  [ ] Report
+	-  [x] Details
+	-  [x] Report
 	-  [ ] Append
 	-  [ ] Search
 -  [ ] Additional Router Actions
-	-  [ ] Json
+	-  [x] Json
 	-  [ ] Api
 	-  [ ] Doc
 	-  [ ] Pdf
@@ -57,15 +57,15 @@
 	-  [x] Menu
 	-  [ ] Settings
 -  [x] Switching project to Dev mode
--  [ ] Create tables in DB
-	-  [ ] Config
-	-  [ ] installation script
+-  [x] Create tables in DB
+	-  [x] Config (src/config/setup.php)
+	-  [x] installation script (src/tools/update.php)
 -  [x] Create CRUD for each table
 -  [ ] Import data
 -  [ ] Wring a simple test
--  [ ] Writing a function
--  [ ] Writing a report
--  [ ] Reusing modules from another projects
+-  [x] Writing a function
+-  [x] Writing a report
+-  [x] Reusing modules from another projects
 -  [ ] Connect external resource
 -  [ ] Export to CSV
 -  [ ] Generate PDF
@@ -84,15 +84,15 @@
 -  [x] Installation of BI framework skeleton
 -  [x] Initialisation of new project
 -  [x] Data: CRUD and ACL
--  [ ] Forms and Reports
--  [ ] Table views and Details views
+-  [x] Forms and Reports
+-  [x] Table views and Details views
 -  [x] Users management and access rights
 -  [x] Configuration and settings
 -  [ ] Integration with external services (SMS, Mail, REST servers)
 -  [ ] API calls
 -  [ ] Project development cycle conforming Agile method
 -  [ ] Import data
--  [ ] Charts
+-  [x] Charts
 -  [ ] Generate PDF, DOCX and XLSX files
 -  [ ] Backup, Restore, Scheduled runs.
 -  [ ] Running on production server

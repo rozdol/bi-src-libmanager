@@ -1,6 +1,6 @@
 <?php
 $chart=array(
-    "caption"=> "Risk Categorization",
+    "caption"=> "Transactions types",
     "subCaption"=> "",
     "paletteColors"=> "#0075c2,#1aaf5d,#f2c500,#f45b00,#8e0000",
     "numberPrefix"=> "",
@@ -20,15 +20,33 @@ $chart=array(
     "theme"=> "fint"
 );
 
-$arr1['High Risk']=10;
-$arr1['Normal Risk']=100;
-$arr1['Low Risk']=30;
-$arr1['Undefined Risk']=2;
+$sql="SELECT * FROM listitems WHERE list_id=101";
+if (!($cur = pg_query($sql))) {$this->html->SQL_error($sql);}
+$rows=pg_num_rows($cur);
+while ($row = pg_fetch_array($cur,NULL,PGSQL_ASSOC)){
+    //echo $this->html->pre_display($row,"row");
+    $arr1[$row[name]]=$this->db->getval("SELECT count(*) from books_transactions where type_id=$row[id]");
+}
+// echo $this->html->pre_display($arr1,"arr1");
+// exit;
+
+// $arr1['Aquisition']=$this->db->getval("SELECT count(*) from books_transactions where type_id=1");
+// $arr1['INs']=$this->db->getval("SELECT count(*) from books_transactions where type_id=2");
+// $arr1['OUTs']=$this->db->getval("SELECT count(*) from books_transactions where type_id=3");
+// $arr1['Disposals']=$this->db->getval("SELECT count(*) from books_transactions where type_id=4");
 
 $data=$this->utils->array2array($arr1, 'label', 'value');
+// echo $this->html->pre_display($arr1,"arr1");
+// echo $this->html->pre_display($data,"result");
+
 $FC_array=array('chart'=>$chart,'data'=>$data);
-
+// echo $this->html->pre_display($FC_array,"result");
+// exit;
 $jsonEncodedData = json_encode($FC_array);
-$chart1.=$this->utils->chart_js_new('pie2d', 600, 400, 'chart-1', $jsonEncodedData);
+$chart1=$this->utils->chart_js_new('pie2d', 600, 400, 'chart-1', $jsonEncodedData);
 
-echo $chart1;
+$body.= $chart1;
+
+
+
+

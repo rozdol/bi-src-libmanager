@@ -39,5 +39,11 @@ class project extends Router
         return include(FW_DIR.'/helpers/f.php');
     }
 
+    function get_book_descr($id = 1)
+    {
+        $f=__FUNCTION__;
+        return include(FW_DIR.'/helpers/f.php');
+    }
+
     //replace_placeholder
 }

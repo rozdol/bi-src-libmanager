@@ -1,7 +1,7 @@
 <?php
 //Details entities
     $res=$this->db->GetRow("select * from $what where id=$id");
-    $partner=$this->data->detalize('partners', $res[partner_id]);
+    //$partner=$this->data->detalize('partners', $res[partner_id]);
     $date=$this->html->readRQd('date',1);
     $out.= "<h1>$res[name]</h1>";
     $out.=$this->data->details_bar($what,$id);
@@ -26,9 +26,12 @@ $out.="</table>";
 
     if($res[descr])$out.= "Description:<br><pre>$res[descr]</pre>";
 
-    $dname=$this->data->docs2obj($id,$what);
-    $out.="<b>Documents:</b> $dname<br>";
-    $out.=$this->show_docs2obj($id, $what);
+    $_POST[ids]=$id;
+    $out.=$this->report('transactions_by_clients');
+
+    // $dname=$this->data->docs2obj($id,$what);
+    // $out.="<b>Documents:</b> $dname<br>";
+    // $out.=$this->show_docs2obj($id, $what);
 
     $_POST[tablename]=$what;
     $_POST[refid]=$id;
@@ -36,6 +39,6 @@ $out.="</table>";
     $out.=$this->show('schedules');
     $out.=$this->show('comments');
     $out.=$this->report('posts');
-    $out.=$this->report('db_changes');
+    //$out.=$this->report('db_changes');
     $body.=$out;
     

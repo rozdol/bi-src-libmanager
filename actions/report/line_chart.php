@@ -27,7 +27,7 @@ $chart=array(
     'showValues' => 0
 );
 
-//Use SQL ro generate months as categories for
+//Use SQL to generate months as categories for
 $category=array();
 $sql="SELECT date_trunc('$span',date_trunc('$span', $df::date) - (interval '1' $span * generate_series(0,$ticks)))::date as date order by date";
 
@@ -49,7 +49,7 @@ $categories=array(
 $data0=array();
 $sql="SELECT COALESCE(count(tbl.id), 0) as amount, date_trunc( '$span', d.date )::date as date FROM (select date_trunc('$span',date_trunc('$span', $df::date) - (interval '1' $span * generate_series(0,$ticks)))::date as date) d
 LEFT OUTER JOIN books_transactions tbl
-ON (d.date=date_trunc('$span', tbl.date)::date) and type_id in (1,2)
+ON (d.date=date_trunc('$span', tbl.date)::date) and type_id in (1,3)
 GROUP BY d.date order by d.date;";
 
 if (!($cur = pg_query($sql))) {
@@ -63,7 +63,7 @@ while ($row = pg_fetch_array($cur)) {
 $data1=array();
 $sql="SELECT COALESCE(count(tbl.id), 0) as amount, date_trunc( '$span', d.date )::date as date FROM (select date_trunc('$span',date_trunc('$span', $df::date) - (interval '1' $span * generate_series(0,$ticks)))::date as date) d
 LEFT OUTER JOIN books_transactions tbl
-ON (d.date=date_trunc('$span', tbl.date)::date) and type_id in (3,4)
+ON (d.date=date_trunc('$span', tbl.date)::date) and type_id in (2,4)
 GROUP BY d.date order by d.date;";
 
 if (!($cur = pg_query($sql))) {
@@ -92,5 +92,7 @@ $FC_array=array(
     'dataset' => $dataset
     );
 $jsonEncodedData = json_encode($FC_array);
+// echo $this->html->pre_display($FC_array,"FC_array");
+// exit;
 $out.= $this->utils->chart_js_new('msline', 1200, 400, 'eventschart', $jsonEncodedData);
 $body.=$out;

@@ -4,7 +4,10 @@ if ($GLOBALS[uid]<=0) {
     $div.=$this->html->link_button('Sign up', "?act=form&what=signup", "btn-info", "");
     $out.=$this->html->tag($div, 'div', 'class');
 } else {
-    $out.=$this->html->tag("Logged in as ".$GLOBALS[username], 'div', 'class');
+    //$out.=$this->html->tag("Logged in as ".$GLOBALS[username], 'div', 'class');
+
+    $out.=$this->report('transactions_by_clients');
+    $out.=$this->report('pie_chart');
 
     if ($GLOBALS[access][main_admin]) {
         $out.=$this->html->link_button('Reset System', "?csrf=$GLOBALS[csrf]&act=tools&what=reset", "btn-error error btn-nano", "The DB will be wiped!!!");

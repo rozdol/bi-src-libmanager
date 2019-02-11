@@ -1,8 +1,8 @@
 <?php
-$df=$this->html->readRQd('df');
-if($df=='')$df=$this->db->getval("SELECT min(valuedate) from transactions");
-$dt=$this->html->readRQd('dt');
-if($dt=='')$dt=$this->dates->F_dateadd_year($df,1);
+// $df=$this->html->readRQd('df');
+// if($df=='')$df=$this->db->getval("SELECT min(valuedate) from transactions");
+// $dt=$this->html->readRQd('dt');
+// if($dt=='')$dt=$this->dates->F_dateadd_year($df,1);
 
 
 /*

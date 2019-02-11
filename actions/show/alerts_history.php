@@ -22,7 +22,7 @@
 
 
     //=== Andrew. Modify list of columns in output html table:
-    $fields=array('id','name','date','user_id','entity_id','books_transaction_id','type_id',);
+    $fields=array('id','name','date','user','client','transaction','transaction type',);
     // $fields=array('id','name','date','user_id','entity_id','books_transaction_id','type_id','active','descr','text',);
 
 
@@ -41,9 +41,60 @@
         $out.= $this->html->edit_rec($what,$row[id],'ved',$i);
         $out.= "<td id='$what:$row[id]' class='cart-selectable' reference='$what'>$row[id]</td>";
         $out.= "<td onMouseover=\"showhint('$row[descr]', this, event, '400px');\">$row[name]</td>";
-        $out.= "<td>$row[date]</td>";
-        $out.= "<td>$type</td>";
-        $out.= "<td class='n'>".$this->html->money($row[amount])."</td>";
+
+        //=== Andrew: change format form timestamp to date:
+        // $out.= "<td>$row[date]</td>";
+        $dateFormated = $this->dates->F_date($row[date]);
+        $out.=$this->html->tag($dateFormated,'td','class');
+        
+
+        // $out.= "<td>$row[user_id]</td>";
+        // $userName = $this->data->get_name('users', $row[user_id]);
+        $userName = $this->data->get_val('users', 'username', $row[user_id]);
+        $out.= "<td>$userName</td>";
+
+
+
+        // $out.= "<td>$row[entity_id]</td>";
+        $clientName = $this->db->getval("SELECT name||' '||surname from entities where id = $row[entity_id] ");
+        $clientName=$this->html->href("?act=details&what=entities&id=$row[entity_id]",$clientName);
+        $out.= "<td>$clientName</td>";
+
+
+
+        // $out.= "<td>$row[books_transaction_id]</td>";
+        //=== Andrew: prepare SQL request:
+        $sql = "
+        select 
+            '\"'||books.name||'\"   => '||entities.name||' '||entities.surname as whowhen
+
+            from 
+                books_transactions as tr, 
+                books, 
+                entities 
+            WHERE
+                tr.book_id      = books.id
+                and
+                tr.entity_id    = entities.id
+                and 
+                tr.id = $row[books_transaction_id]
+        ";
+
+        $transactionName = $this->db->getval($sql);
+        $transactionName=$this->html->href("?act=details&what=books_transactions&id=$row[books_transaction_id]",$transactionName);
+        $out.= "<td>$transactionName</td>";
+
+
+
+
+
+        // $out.= "<td>$row[type_id]</td>";
+        $transactionTypeName = $this->data->get_name('listitems', $row[type_id]);
+        $out.= "<td>$transactionTypeName</td>";
+
+
+
+
         $out.= "</tr>";
         $totals[2]+=$row[qty];
         if ($allids) $allids.=','.$what.':'.$row[id]; else $allids.=$what.':'.$row[id];

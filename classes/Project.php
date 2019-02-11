@@ -33,5 +33,11 @@ class project extends Router
         return include(FW_DIR.'/helpers/f.php');
     }
 
+    function gen_transactions($args=['year'=>2018, 'qty'=>30])
+    {
+        $f=__FUNCTION__;
+        return include(FW_DIR.'/helpers/f.php');
+    }
+
     //replace_placeholder
 }

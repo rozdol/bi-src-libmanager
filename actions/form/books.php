@@ -20,7 +20,11 @@
     $out.=$this->html->form_hidden('refid',$refid);
 
     $out.=$this->html->form_text('name',$res[name],'Name','',0,'span12');
-// $out.=$this->html->form_date('date',$res[date],'Date','',0,'span12');
+
+    //=== Andrw: hide field 'date'. Will assign the value at Save action:
+    // $out.=$this->html->form_date('date',$res[date],'Date','',0,'span12');
+
+    
 $out.=$this->html->form_text('isbn',$res[isbn],'Isbn','',0,'span12');
 $out.=$this->html->form_text('link',$res[link],'Link','',0,'span12');
 $out.=$this->html->form_chekbox('active',$res[active],'Active','',0,'span12');

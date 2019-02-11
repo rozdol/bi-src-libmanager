@@ -9,9 +9,10 @@
         $res[active]='t';
 
         //=== Andrew: show user hint for record name:
-        $place_holder = $this->data->get_new_name($what, '','','BTR-');
-        
         // unction get_new_name($table='', $date='', $addsql='', $prefix='', $opt='')
+        $placeHolder = $this->data->get_new_name($what, '','','BTR-');
+        
+        
     }
 
     $form_opt['well_class']="span11 columns form-wrap";
@@ -25,8 +26,8 @@
     $out.=$this->html->form_hidden('refid',$refid);
 
 
-    //=== Andrew: show user hint for record name (see $place_holder):
-    $out.=$this->html->form_text('name',$res[name],'Name',$place_holder,0,'span12');
+    //=== Andrew: show user hint for record name (see $placeHolder):
+    $out.=$this->html->form_text('name',$res[name],'Name',$placeHolder,0,'span12');
 
 
 // $out.=$this->html->form_date('date',$res[date],'Date','',0,'span12');

@@ -265,3 +265,22 @@ if (!$access['main_admin']) {
 ```
 
 Изучаем функцию `generate_post_data()` в файле `query.sh`, что бы понять **fields** и **filters**.
+
+# REST to Reuters
+Закомментировать строки в файле `post_update.sh`
+
+```bash
+#rm -r ./public/assets
+#rm -r ./bi
+#rm -r ./src
+
+#mv  tmp/public/assets ./public/
+#mv  tmp/root/bi ./
+#mv  tmp/src/src ./
+```
+
+Установить unirest
+```bash
+composer require mashape/unirest-php
+```
+

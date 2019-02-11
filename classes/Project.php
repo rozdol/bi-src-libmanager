@@ -27,23 +27,15 @@ class project extends Router
         return self::$hInstance;
     }
     
-    function sample_function($arg = '')
-    {
-        $f=__FUNCTION__;
-        return include(FW_DIR.'/helpers/f.php');
-    }
+    function sample_function($arg = ''){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
+    function gen_transactions($args=['year'=>2018, 'qty'=>30]){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
+    function get_book_descr($id = 1){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
 
-    function gen_transactions($args=['year'=>2018, 'qty'=>30])
-    {
-        $f=__FUNCTION__;
-        return include(FW_DIR.'/helpers/f.php');
-    }
-
-    function get_book_descr($id = 1)
-    {
-        $f=__FUNCTION__;
-        return include(FW_DIR.'/helpers/f.php');
-    }
+    function reuters_import($data=[]){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
+    function ric_encode($index='',$df='',$dt=''){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
+    function ric_decode($ric){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
+    function get_reuters_quote($index='',$df='',$dt=''){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
+    function update_reuters_quotes($indexes){$f=__FUNCTION__;return include(FW_DIR.'/helpers/f.php');}
 
     //replace_placeholder
 }

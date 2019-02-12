@@ -7,7 +7,7 @@
 	-  [x] Basic knowledge of PHP, HTML, CSS, JS, SQL
 -  [ ] Introduction
 	-  [x] What is FW good for and what is not
-	-  [ ] Showcase
+	-  [x] Showcase
 -  [x] Define a case study
 	-  [x] Pick an idea
 	-  [x] Define roles
@@ -24,58 +24,58 @@
 	-  [x] App
 	-  [x] Router
 -  [ ] Framework core functions
-	-  [ ] Dates
-	-  [ ] Utils
-	-  [ ] Html
-	-  [ ] Comm
-	-  [ ] DB
-	-  [ ] Data
+	-  [x] Dates
+	-  [x] Utils
+	-  [x] Html
+	-  [x] Comm
+	-  [x] DB
+	-  [x] Data
 -  [ ] External Classes
-	-  [ ] Numbers
+	-  [ ] -Numbers
 	-  [x] Charts
-	-  [ ] Others
+	-  [x] Others
 -  [ ] Router Actions
 	-  [x] Show
 	-  [x] Form
 	-  [x] Save
-	-  [ ] Delete
+	-  [x] Delete
 	-  [x] Details
 	-  [x] Report
-	-  [ ] Append
-	-  [ ] Search
+	-  [ ] -Append
+	-  [ ] -Search
 -  [ ] Additional Router Actions
 	-  [x] Json
-	-  [ ] Api
-	-  [ ] Doc
-	-  [ ] Pdf
+	-  [x] Api
+	-  [x] Doc
+	-  [x] Pdf
 	-  [x] Test
 	-  [x] Tools
 -  [ ] Access and security
 	-  [x] Users
-	-  [ ] Groups
-	-  [ ] Access
+	-  [x] Groups
+	-  [x] Access
 	-  [x] Menu
-	-  [ ] Settings
+	-  [x] Settings
 -  [x] Switching project to Dev mode
 -  [x] Create tables in DB
 	-  [x] Config (src/config/setup.php)
 	-  [x] installation script (src/tools/update.php)
 -  [x] Create CRUD for each table
--  [ ] Import data
+-  [ ] -Import data
 -  [x] Wring a simple test
 -  [x] Writing a function
 -  [x] Writing a report
 -  [x] Reusing modules from another projects
 -  [x] Connect external resource
--  [ ] Export to CSV
--  [ ] Generate PDF
--  [ ] Generate DOCX
--  [ ] Generate XLSX
--  [ ] Parse XLSX
--  [ ] Send SMS
--  [ ] Send E-mails
--  [ ] Create API functions
--  [ ] Deploying to production server
+-  [x] Export to CSV
+-  [ ] -Generate PDF
+-  [ ] -Generate DOCX
+-  [x] Generate XLSX
+-  [ ] -Parse XLSX
+-  [x] Send SMS
+-  [x] Send E-mails
+-  [x] Create API functions
+-  [x] Deploying to production server
 -  [ ] Continuous integration
 -  [ ] Deploy to AWS
 
@@ -90,11 +90,11 @@
 -  [x] Configuration and settings
 -  [x] Integration with external services (SMS, Mail, REST servers) [Reuters]
 -  [x] API calls
--  [ ] Project development cycle conforming Agile method
--  [ ] Import data
+-  [x] Project development cycle conforming Agile method
+-  [x] Import data
 -  [x] Charts
--  [ ] Generate PDF, DOCX and XLSX files
+-  [x] Generate CSV, -PDF, -DOCX and XLSX files
 -  [x] Backup, Restore, Scheduled runs.
--  [ ] Running on production server
+-  [x] Running on production server
 
 

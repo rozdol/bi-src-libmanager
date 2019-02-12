@@ -5,8 +5,13 @@ if ($GLOBALS[uid]<=0) {
     $out.=$this->html->tag($div, 'div', 'class');
 } else {
     //$out.=$this->html->tag("Logged in as ".$GLOBALS[username], 'div', 'class');
+    $_POST[noexport]=1;
 
     $out.=$this->report('transactions_by_clients');
+    $_POST[noexport]='';
+
+    $out.=$this->report('transactions_by_clients');
+
     $out.=$this->report('pie_chart');
 
     if ($GLOBALS[access][main_admin]) {

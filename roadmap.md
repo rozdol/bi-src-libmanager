@@ -89,12 +89,12 @@
 -  [x] Users management and access rights
 -  [x] Configuration and settings
 -  [ ] Integration with external services (SMS, Mail, REST servers) [Reuters]
--  [ ] API calls
+-  [x] API calls
 -  [ ] Project development cycle conforming Agile method
 -  [ ] Import data
 -  [x] Charts
 -  [ ] Generate PDF, DOCX and XLSX files
--  [ ] Backup, Restore, Scheduled runs.
+-  [x] Backup, Restore, Scheduled runs.
 -  [ ] Running on production server
 
 

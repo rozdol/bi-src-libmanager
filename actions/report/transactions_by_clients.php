@@ -6,7 +6,7 @@ $sql="SELECT * FROM entities WHERE id>0 $sql order by name";
 $fields=array('#','id','name','acquir','in','out','disp','total','');
 //$sort= array('id','name');
 
-$csv_row=['id','name'];
+$csv_row=['id','name','acquir','in','out','disp'];
 $csv_arr[]=implode("\t",$csv_row);
 
 $out=$this->html->tag('Transactions by Clients','foldered');
@@ -46,7 +46,7 @@ while ($row = pg_fetch_array($cur,NULL,PGSQL_ASSOC)){
 	$totals[6]+=$total_qty;
 
 
-	$csv_row=[$i,$row[id],$row[name]];
+	$csv_row=[$row[id],$row[name],$acc_qty,$in_qty,$out_qty,$disp_qty];
 	$csv_arr[]=implode("\t",$csv_row);
 
 	if ($allids) $allids.=','.$what.':'.$row[id]; else $allids.=$what.':'.$row[id];

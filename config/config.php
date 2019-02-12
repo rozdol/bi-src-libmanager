@@ -6,7 +6,7 @@ $GLOBALS['settings']['use_xls_export']=1; //Use export-import with xls support
 $GLOBALS['settings']['use_csv_export']=1; //Use CSV for export
 $GLOBALS['settings']['use_tbl2csv']=1; //use converter
 $GLOBALS['settings']['use_cache']=0; //use cache
-$GLOBALS['settings']['csrf']=''; //reset csrf
+$GLOBALS['settings']['csrf']='1'; //reset csrf
 $GLOBALS['settings']['no_csrf']=0; //disable csrf guard
 $GLOBALS['settings']['session_time']=1800; //users session time in seconds (1800sec=30min)
 $GLOBALS['settings']['rnd']=rand();

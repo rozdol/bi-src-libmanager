@@ -88,7 +88,7 @@
 -  [x] Table views and Details views
 -  [x] Users management and access rights
 -  [x] Configuration and settings
--  [ ] Integration with external services (SMS, Mail, REST servers) [Reuters]
+-  [x] Integration with external services (SMS, Mail, REST servers) [Reuters]
 -  [x] API calls
 -  [ ] Project development cycle conforming Agile method
 -  [ ] Import data

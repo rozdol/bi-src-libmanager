@@ -269,10 +269,10 @@ if (!$access['main_admin']) {
 
 Запросы можно делать в коммандной строке по примеру:
 ```bash
-curl -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d '{"user":"admin","pass":"Pass1234"}' http://localhost?:8000/\?act\=api
+curl -H "Content-Type: application/json" -H "Accept: application/json" -X POST -d '{"user":"admin","pass":"Pass1234"}' http://localhost:8000/\?act\=api
 
 
-curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsInVubSI6ImFkbWluIiwiZXhwIjoxNTUwNTY4NTI5fQ.pWihHlFaIHU98u8ovHFUJC5kXDnw8p8XJ6_SWxhg8BE" -X POST -d '{"user":"admin", "api_key":"87b101-1bdadf-0b2e36-513838-8b3005", "func":"show", "table":"books"}' http://localhost?:8000/\?act\=api
+curl -H "Content-Type: application/json" -H "Accept: application/json" -H "Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjIsInVubSI6ImFkbWluIiwiZXhwIjoxNTUwNTY4NTI5fQ.pWihHlFaIHU98u8ovHFUJC5kXDnw8p8XJ6_SWxhg8BE" -X POST -d '{"user":"admin", "api_key":"87b101-1bdadf-0b2e36-513838-8b3005", "func":"show", "table":"books"}' http://localhost:8000/\?act\=api
 ```
 
 # REST to Reuters

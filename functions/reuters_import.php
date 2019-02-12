@@ -72,8 +72,8 @@ if($response->code=='401'){
 
 	];
 	$credentials=['Credentials'=>[
-	'Username' => '9011839', 
-	'Password' => 'IneedRIC4mu']];
+	'Username' => getenv('REUTERS_USER'),
+	'Password' => getenv('REUTERS_PASS')];
 	$data = $credentials;
 
 	//$body = Unirest\Request\Body::form($data);
